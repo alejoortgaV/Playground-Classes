@@ -92,3 +92,24 @@ myContent.count
 for valor in myContent {
     print(valor)
 }
+
+
+var numeroInt = [1,2,3]
+
+var numeroInt2 = [1,3,5,6]
+
+numeroInt.append(4)
+
+numeroInt.insert(4, at: 2)
+
+numeroInt.removeLast()
+
+numeroInt
+
+numeroInt.remove(at: 1)
+
+numeroInt
+
+numeroInt.removeAll()
+
+
