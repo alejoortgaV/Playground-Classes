@@ -40,8 +40,6 @@ let arregloInmutable = [3,2,1]
 
 print(arregloNumeros)
 
-arregloNumeros.append(4,5,6,7,8,9,10)
-
 print(arregloNumeros)
 
 print(arregloNumeros[2])
@@ -50,6 +48,66 @@ print(arregloNumeros[2])
 
 //Diccionarios
 
-// ----> sirve para almacenar datos tipo Valor.
+// ----> sirve para almacenar datos tipo Valor de tipo clave o del mimso tipo o pudiendo ser del mismo tipo o valor.
+
+//Sintaxis diccionarios
+
+let myClassicDicionary = Dictionary<Int, String>()
+
+var myModernDictionary = [Int:String]()
+
+//Añadir datos
+
+myModernDictionary = [1:"Alejo"]
+
+
+//añadir nuevos valores para que no borre el array.
+myModernDictionary[2] = "Martin"
+
+print(myModernDictionary)
+
+
+//Acceder a un dato
+
+var myDataUser2 = myModernDictionary[2]
+
+print(myDataUser2)
+
+myModernDictionary[2] = "Julio"
+
+myModernDictionary.updateValue("Juliana", forKey: 1)
+
+myModernDictionary[1]
+
+//Borrar un dato
+
+myModernDictionary[2] = nil
+
+myModernDictionary.removeValue(forKey: 1)
+
+myModernDictionary[3] = "Martin"
+
+if myModernDictionary.isEmpty {
+    print("This dictionary is empty")
+}else {
+    print("The dictionary has information in it.")
+}
+
+
+
+//Tuplas
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
