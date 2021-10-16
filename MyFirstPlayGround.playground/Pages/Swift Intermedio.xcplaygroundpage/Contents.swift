@@ -97,17 +97,104 @@ if myModernDictionary.isEmpty {
 
 //Tuplas
 
+//Se comportaan como una colección donde se guardan colecciones para guardar diferentes tipos de datos con este solo tipo de dato.
+
+//Los arreglos deben ser, númericos, o strings.
+
+var array = ["Hey", "Hi", "Hello","Arigato","Hello", "Oi"]
+
+array[0]
+
+// La persona puede tener :
+// Nombre, Apellido, Edad,Estatura
 
 
+var persona =
+    ("Alejandro", "Forero",23, 1.68)
 
 
+persona.0
 
 
+var (nombre,apellido,edad,estatura) = persona
+
+nombre
+apellido
+edad
+estatura
 
 
+var personNamedTuples =
+    (nombres: "Alejo", apellidos: "Ortega", edades: 23, estaturaaas: 1.68)
 
 
+personNamedTuples.nombres
 
 
+//Enumeraciones
+
+//Estructura para agrupar datos que tiene caracteristicas en comun.
 
 
+//nompre, apellido, direccion y numero de telefono.
+
+enum personalData {
+    case name
+    case surname
+    case address
+    case phone
+}
+
+var currentData : personalData = .name
+var input = "Alejandro"
+
+currentData = .phone
+input = "3159383"
+
+enum complexPersonalData {
+    case name(String)
+    case surname(String)
+    case address(String, Int)
+    case phone(Int)
+}
+
+var complexCurrentData  : complexPersonalData
+
+complexCurrentData = .name("Alejandro")
+
+print(complexCurrentData)
+
+
+complexCurrentData = .address("Calle ", 14)
+
+
+enum rawPersonaldata : Int{
+    case name
+    case surname
+    case address
+    case phone
+}
+
+rawPersonaldata.address.rawValue
+
+//Range Operator
+
+var arregloEjemplo = [0,1,2,3,4,5,6,7,8,9]
+
+//two-sided range operator
+
+
+arregloEjemplo.append(10)
+
+
+var subSetArreglo = arregloEjemplo[1..<3]
+
+
+//one-sided range operator
+
+var subSetArreglo2 = arregloEjemplo[...3]
+
+var subSetArreglo3 = arregloEjemplo[5...]
+
+
+var rangoCerrado = [1...3]
